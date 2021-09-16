@@ -86,7 +86,7 @@ function vedorCss() {
 
 
 function watchFiles() {
-	watch(PATHS.IN  + '/**/*.jade', html)
+	watch(PATHS.IN  + '/**/*.pug', html)
 	watch(PATHS.MODULES  + '/**/*.styl', css)
 	watch(PATHS.MODULES  + '/**/*.js', js)
 }
