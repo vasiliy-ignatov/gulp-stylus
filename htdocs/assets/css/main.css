@@ -384,6 +384,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 .app {
   min-height: 100%;
@@ -408,12 +409,14 @@ body {
 }
 .header {
   padding: 20px 0;
-  background: linear-gradient(134.86deg, #c5b6aa 45.49%, #e4dcd5 85.27%);
+  background: #a52a2a;
+  color: #fff;
 }
 .footer {
   flex-shrink: 0;
   padding: 20px 0;
-  background-color: #add8e6;
+  color: #fff;
+  background-color: #000;
 }
 .page-list {
   padding-top: 30px;
@@ -434,4 +437,15 @@ body {
 }
 .page-list a {
   color: inherit;
+}
+.component {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(86,61,124,0.2);
+}
+.component__title {
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
