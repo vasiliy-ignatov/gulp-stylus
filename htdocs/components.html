@@ -16,25 +16,67 @@
       </header>
       <main class="main">
         <div class="container">
-          <h3>Пример сетки</h3>
-          <div class="row">
-            <div class="col-4 col-lg-2 col-md-3 col-sm-6 block">
-              <div class="d-none d-lg-block">col-lg-2</div>
-              <div class="d-none d-md-block d-lg-none">col-md-3</div>
-              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
-              <div class="d-block d-sm-none">col-xs-4</div>
+          <h3>Пример сетки 2</h3>
+          <div class="grid">
+            <div class="grid__col grid__col_3 grid__md-col_6 grid__sm-col_12">
+              <div class="block">
+                <p><b>dt: </b>.grid__col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__sm-col_12</p>
+              </div>
             </div>
-            <div class="col-4 col-lg-8 col-md-6 col-sm-6 block">
-              <div class="d-none d-lg-block">col-lg-8</div>
-              <div class="d-none d-md-block d-lg-none">col-md-6</div>
-              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
-              <div class="d-block d-sm-none">col-xs-4</div>
+            <div class="grid__col grid__col_3 grid__md-col_6 grid__sm-col_12">
+              <div class="block">
+                <p><b>dt: </b>.grid__col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__sm-col_12</p>
+              </div>
             </div>
-            <div class="col-4 col-lg-2 col-md-3 d-sm-none d-md-block block">
-              <div class="d-none d-lg-block">col-lg-2</div>
-              <div class="d-none d-md-block d-lg-none">col-md-3</div>
-              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
-              <div class="d-block d-sm-none">col-xs-4</div>
+            <div class="grid__col grid__col_3 grid__md-col_6 grid__sm-col_12">
+              <div class="block">
+                <p><b>dt: </b>.grid__col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__sm-col_12</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_3 grid__md-col_6 grid__sm-col_12">
+              <div class="block">
+                <p><b>dt: </b>.grid__col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__sm-col_12</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="grid__col grid__col_8 grid__pull_2 grid__md-col_6 grid__md-pull_3 grid__sm-col_10 grid__sm-pull_1">
+              <div class="block">
+                <p><b>dt: </b>.grid__col_8.grid__pull_2</p>
+                <p><b>md: </b>.grid__md-col_6.grid__md-pull_3</p>
+                <p><b>sm: </b>.grid__sm-col_10.grid__sm-pull_1</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="grid__col grid__col_4 grid__order_2 grid__md-order_3 grid__sm-col_12 grid__sm-order_1">
+              <div class="block"><b>Col №1</b>
+                <p><b>dt: </b>.grid__col_4.grid__order_2</p>
+                <p><b>md: </b>.grid__md-order_3</p>
+                <p><b>sm: </b>.grid__sm-col_12.grid__sm-order_1</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_4 grid__order_3 grid__md-order_1 grid__sm-col_12 grid__sm-order_1">
+              <div class="block"><b>Col №2</b>
+                <p><b>dt: </b>.grid__col_4.grid__order_3</p>
+                <p><b>md: </b>.grid__md-order_1</p>
+                <p><b>sm: </b>.grid__sm-col_12.grid__sm-order_1</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_4 grid__order_1 grid__md-order_2 grid__sm-col_12 grid__sm-order_1">
+              <div class="block"><b>Col №3</b>
+                <p><b>dt: </b>.grid__col_4.grid__order_1</p>
+                <p><b>md: </b>.grid__md-order_2</p>
+                <p><b>sm: </b>.grid__sm-col_12.grid__sm-order_1</p>
+              </div>
             </div>
           </div>
         </div>
