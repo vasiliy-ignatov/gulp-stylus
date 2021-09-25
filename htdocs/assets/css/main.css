@@ -383,20 +383,16 @@
 }
 html,
 body {
+  height: 100%;
   font-family: 'Roboto', Arial, sans-serif;
 }
-body {
-  display: flex;
-  margin: 0;
-}
 .app {
+  height: 100%;
   display: flex;
-  flex: 1 1 auto;
-  flex-flow: column nowrap;
-  min-height: 100vh;
+  flex-direction: column;
 }
 .main {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
 }
 .container {
   max-width: 1440px;
