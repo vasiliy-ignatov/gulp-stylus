@@ -3200,6 +3200,22 @@ html {
 .invisible {
   visibility: hidden !important;
 }
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main {
+  flex: 1 0 auto;
+}
 .block {
   border: 1px solid #808080;
 }
@@ -3207,6 +3223,15 @@ html {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
+}
+.header {
+  padding: 20px 0;
+  background: linear-gradient(134.86deg, #c5b6aa 45.49%, #e4dcd5 85.27%);
+}
+.footer {
+  flex-shrink: 0;
+  padding: 20px 0;
+  background-color: #add8e6;
 }
 .page-list {
   padding-top: 30px;
