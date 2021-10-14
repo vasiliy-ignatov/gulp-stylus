@@ -399,63 +399,6 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 }
-.block {
-  height: 100%;
-  padding: 10px;
-  color: #000;
-  background-color: rgba(86,61,124,0.15);
-  border: 1px solid rgba(86,61,124,0.2);
-}
-.coub {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.coub__inner {
-  position: relative;
-  padding-bottom: 50%;
-  background-color: #008000;
-}
-.coub__item {
-  position: absolute;
-}
-.coub__item_red {
-  width: 10%;
-  height: 20%;
-  top: 20%;
-  right: auto;
-  bottom: auto;
-  left: 10%;
-  background-color: #f00;
-}
-@media screen and (max-width: 1280px) {
-  .coub__item_red {
-    width: 10%;
-    height: 20%;
-    top: 40%;
-    right: auto;
-    bottom: auto;
-    left: 20%;
-  }
-}
-.coub__item_black {
-  width: 10%;
-  height: 20%;
-  top: auto;
-  right: 10%;
-  bottom: 20%;
-  left: auto;
-  background-color: #000;
-}
-@media screen and (max-width: 1280px) {
-  .coub__item_black {
-    width: 10%;
-    height: 20%;
-    top: auto;
-    right: 20%;
-    bottom: 40%;
-    left: auto;
-  }
-}
 .header {
   padding: 20px 0;
   background: #a52a2a;
@@ -496,4 +439,61 @@ body {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+}
+.block {
+  height: 100%;
+  padding: 10px;
+  color: #000;
+  background-color: rgba(86,61,124,0.15);
+  border: 1px solid rgba(86,61,124,0.2);
+}
+.coub {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.coub__inner {
+  position: relative;
+  padding-bottom: 50%;
+  background-color: rgba(86,61,124,0.15);
+}
+.coub__item {
+  position: absolute;
+}
+.coub__item_brown {
+  width: 10%;
+  height: 20%;
+  top: 20%;
+  right: auto;
+  bottom: auto;
+  left: 10%;
+  background-color: #a52a2a;
+}
+@media screen and (max-width: 1280px) {
+  .coub__item_brown {
+    width: 10%;
+    height: 20%;
+    top: 40%;
+    right: auto;
+    bottom: auto;
+    left: 20%;
+  }
+}
+.coub__item_black {
+  width: 10%;
+  height: 20%;
+  top: auto;
+  right: 10%;
+  bottom: 20%;
+  left: auto;
+  background-color: #000;
+}
+@media screen and (max-width: 1280px) {
+  .coub__item_black {
+    width: 10%;
+    height: 20%;
+    top: auto;
+    right: 20%;
+    bottom: 40%;
+    left: auto;
+  }
 }

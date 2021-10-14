@@ -1,3 +1,11 @@
+Для комфортной работы, рекомендуется установить расширения для редактора:
+
+- [ESLint](https://eslint.org/docs/user-guide/integrations)
+
+- [EditorConfig](https://editorconfig.org/#download)
+
+---
+
 Установка модульных зависимостей
 ```bash
 npm install
