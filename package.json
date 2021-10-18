@@ -3,18 +3,26 @@
 	"version": "1.0.0",
 	"author": "Vasiliy Ignatov",
 	"license": "ISC",
-	"main": "index.js",
 	"scripts": {
-		"gulp": "gulp default",
-		"build": "gilp build",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "gulp watch",
+		"build:dev": "gulp build",
+		"build:prod": "gulp build --prod"
+	},
+	"babel": {
+		"presets": [
+			"es2015"
+		]
 	},
 	"devDependencies": {
-		"@babel/core": "^7.15.5",
 		"@babel/preset-env": "^7.14.8",
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-register": "^6.26.0",
 		"browser-sync": "^2.27.5",
 		"del": "^6.0.0",
 		"eslint": "^7.32.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-plugin-import": "^2.25.2",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
 		"gulp-concat": "^2.6.1",

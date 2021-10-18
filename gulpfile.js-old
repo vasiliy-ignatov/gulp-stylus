@@ -8,6 +8,7 @@ const pug = require('gulp-pug')
 const concat = require('gulp-concat')
 const babel = require('gulp-babel')
 
+
 // const PATHS = {
 // 	MODULES:'./src/modules',
 // 	VENDOR: './src/vendor',
@@ -76,12 +77,12 @@ function jquery() {
 
 function fonts() {
 	return src(config.in.assets + '/fonts/*.*')
-		.pipe(dest(config.out.assets + '/fonts/'));
+		.pipe(dest(config.out.assets + '/fonts/'))
 }
 
 function img() {
 	return src(config.in.assets + '/img/**/*.*')
-		.pipe(dest(config.out.assets + '/img/'));
+		.pipe(dest(config.out.assets + '/img/'))
 }
 
 function vendorJs() {
