@@ -5,15 +5,13 @@ const config = {
 	src: {
 		root: srcPath,
 		pug: `${srcPath}/pug`,
-		styl: `${srcPath}/modules`,
-		js: `${srcPath}/modules`,
+		modules: `${srcPath}/modules`,
 		fonts: `${srcPath}/assests/fonts`,
 		img: `${srcPath}/assests/img`,
 	},
 	dest: {
 		root: destPath,
 		html: destPath,
-		css: `${destPath}/css`,
 		js: `${destPath}/js`,
 		fonts: `${destPath}/fonts`,
 		img: `${destPath}/img`,

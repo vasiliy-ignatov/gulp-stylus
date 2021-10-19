@@ -1,4 +1,4 @@
-'use strict'
+import test from './components/test';
 
-let sum = (a, b) => a + b;
-console.log(sum(1, 2));
+test();
+
