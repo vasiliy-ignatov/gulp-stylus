@@ -27,7 +27,9 @@ export const pugBuild = () => (
 			)
 		)
 		.pipe(plumber())
-		.pipe(pug())
+		.pipe(pug({
+			pretty: config.isProd ? false : true // use false for minimaze html
+		}))
 		.pipe(dest(config.dest.html))
 );
 

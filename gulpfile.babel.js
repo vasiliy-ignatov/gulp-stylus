@@ -7,13 +7,17 @@ import {pugBuild, pugWatch} from './gulp/tasks/pug';
 
 config.setEnv();
 
+
 export const build = series(
 	clean,
-	parallel(pugBuild, scriptsBuild)
+	parallel(
+		scriptsBuild,
+		pugBuild
+	)
 );
 
 export const watch = series(
-	// build,
+	build,
 	server,
 	parallel(scriptsWatch, pugWatch)
 );

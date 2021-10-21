@@ -4,9 +4,9 @@
 	"author": "Vasiliy Ignatov",
 	"license": "ISC",
 	"scripts": {
-		"dev": "gulp watch",
-		"build:dev": "gulp build",
-		"build:prod": "gulp build --prod"
+		"serv": "gulp watch",
+		"dev": "gulp build",
+		"prod": "gulp build --prod"
 	},
 	"babel": {
 		"presets": [

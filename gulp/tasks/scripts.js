@@ -8,7 +8,9 @@ import browserify from 'browserify';
 import gulpif from 'gulp-if';
 import config from '../config';
 
-export const scriptsBuild = () => {
+config.setEnv();
+
+export const scriptsBuild = () => (
 	browserify(`${config.src.modules}/main.js`, { debug: true })
 		.transform('babelify', { presets: ['@babel/preset-env'] })
 		.bundle()
@@ -22,7 +24,6 @@ export const scriptsBuild = () => {
 		.pipe(gulpif(config.isProd, uglify()))
 		.pipe(gulpif(config.isDev, sourcemaps.write()))
 		.pipe(dest(config.dest.js))
-		// .pipe(fs.createWriteStream(`${config.dest.js}/main.js`));
-}
+);
 
 export const scriptsWatch = () => watch(`${config.src.modules}/**/*.js`, scriptsBuild)
