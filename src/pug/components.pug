@@ -1,20 +1,19 @@
-extends ./tpl/layout
+extends ./tpl/layout.pug
 
 block pageVar
-	-page = 'components'
+	- page = 'components'
 
 block page
 	.container
 		.component
 			.component__title Пример адаптивной сетки:
 			.grid
-				-for (var i = 0; i < 4; i++)
+				- for (var i = 0; i < 4; i++)
 					.grid__col.grid__col_3.grid__md-col_6.grid__sm-col_12
 						.block
 							p <b>dt: </b>.grid__col_3
 							p <b>md: </b>.grid__md-col_6
 							p <b>sm: </b>.grid__sm-col_12
-
 		.component
 			.component__title Пример адаптивной сетки с пуллом:
 			.grid

@@ -17,6 +17,7 @@
 		"@babel/core": "^7.15.8",
 		"@babel/preset-env": "^7.14.8",
 		"@babel/register": "^7.15.3",
+		"@zoxon/emitty": "^1.4.2",
 		"babelify": "^10.0.0",
 		"browser-sync": "^2.27.5",
 		"browserify": "^17.0.0",
@@ -33,6 +34,7 @@
 		"gulp-stylus": "^2.7.0",
 		"gulp-uglify": "^3.0.2",
 		"jquery": "^3.6.0",
+		"pug-lint": "^2.6.0",
 		"vinyl-buffer": "^1.0.1",
 		"vinyl-source-stream": "^2.0.0"
 	}

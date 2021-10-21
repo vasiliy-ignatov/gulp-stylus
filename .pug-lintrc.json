@@ -1,0 +1,17 @@
+// more documentation https://github.com/pugjs/pug-lint/blob/master/docs/rules.md
+
+{
+	"validateExtensions": true,
+	"validateDivTags": true,
+	"validateAttributeSeparator": { "separator" : ", ", "multiLineSeparator" : ",\n " },
+	"validateAttributeQuoteMarks": "\"",
+	"requireSpecificAttributes": [ { "img": [ "src", "alt" ] } ],
+	"requireSpaceAfterCodeOperator": true,
+	"requireLowerCaseTags": true,
+	"requireClassLiteralsBeforeIdLiterals": true,
+	"requireClassLiteralsBeforeAttributes": true,
+	"disallowTrailingSpaces": true,
+	"disallowSpacesInsideAttributeBrackets": true,
+	"disallowLegacyMixinCall": true,
+	"disallowDuplicateAttributes": true
+}
