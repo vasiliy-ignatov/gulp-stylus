@@ -12,6 +12,7 @@ const config = {
 	dest: {
 		root: destPath,
 		html: destPath,
+		css: `${destPath}/css`,
 		js: `${destPath}/js`,
 		fonts: `${destPath}/fonts`,
 		img: `${destPath}/img`,

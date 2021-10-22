@@ -4,6 +4,7 @@ import clean from './gulp/tasks/clean';
 import server from './gulp/tasks/server';
 import {scriptsBuild, scriptsWatch} from './gulp/tasks/scripts';
 import {pugBuild, pugWatch} from './gulp/tasks/pug';
+import {cssBuild, cssWatch} from './gulp/tasks/stylus';
 
 config.setEnv();
 
@@ -12,12 +13,19 @@ export const build = series(
 	clean,
 	parallel(
 		scriptsBuild,
-		pugBuild
+		pugBuild,
+		cssBuild
 	)
 );
 
 export const watch = series(
 	build,
 	server,
-	parallel(scriptsWatch, pugWatch)
+	parallel(
+		scriptsWatch,
+		pugWatch,
+		cssWatch
+	)
 );
+
+exports.css = cssBuild;

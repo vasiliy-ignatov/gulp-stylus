@@ -4,7 +4,7 @@
 	"author": "Vasiliy Ignatov",
 	"license": "ISC",
 	"scripts": {
-		"serv": "gulp watch",
+		"serve": "gulp watch",
 		"dev": "gulp build",
 		"prod": "gulp build --prod"
 	},
@@ -13,6 +13,10 @@
 			"@babel/preset-env"
 		]
 	},
+	"browserslist": [
+		"> 0.1%",
+		"IE 11"
+	],
 	"devDependencies": {
 		"@babel/core": "^7.15.8",
 		"@babel/preset-env": "^7.14.8",
@@ -26,7 +30,8 @@
 		"eslint-config-airbnb-base": "^14.2.1",
 		"eslint-plugin-import": "^2.25.2",
 		"gulp": "^4.0.2",
-		"gulp-concat": "^2.6.1",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
 		"gulp-if": "^3.0.0",
 		"gulp-plumber": "^1.2.1",
 		"gulp-pug": "^5.0.0",
